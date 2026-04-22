@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Boli AI · a read on where AI fits in the stack, and where it doesn't</title>
+<meta name="description" content="Matt. I ran EffectiveSoft's discovery writeup on Boli. The AWS serverless plus Auth0 plus IB integration plan is tight. Nothing public shipped since eMerge 2025." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="https://www.boliai.com/" target="_blank" rel="noopener" class="logo" aria-label="Boli AI">
+      <img src="logo.svg" alt="Boli AI" />
+    </a>
+    <span class="booth-tag" aria-label="Prepared for eMerge Americas Miami 2026, booth 223">
+      <span class="dot" aria-hidden="true"></span>eMerge Miami 2026 · Booth 223
+    </span>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" aria-labelledby="headline">
+    <div class="wrap">
+      <p class="eyebrow">Prepared for Ricardo Mendez, CEO</p>
+      <h1 class="headline" id="headline">
+        A read on where AI actually fits in Boli's stack, and where simpler layers would ship <span class="mark">you faster</span>.
+      </h1>
+      <p class="hero-sub">
+        You walked into eMerge this year at the same booth you had last year. EffectiveSoft left you a clean discovery package. The waitlist is still the product. The gap between those two facts is the interesting problem.
+      </p>
+      <div class="hero-meta" aria-label="Engagement context">
+        <span><strong>Four weeks</strong>Scoped sprint</span>
+        <span><strong>Feeld shape</strong>Workshop plus written architecture</span>
+        <span><strong>Hand-offable</strong>Readable by your next CTO hire</span>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="view">
+    <div class="wrap readout">
+      <p class="kicker">Our view</p>
+      <h2 id="view">Most of what has to happen next for Boli is not AI. It is an orchestration problem.</h2>
+      <p class="lede">
+        EffectiveSoft scoped AWS serverless, DynamoDB, RDS, Kubernetes, Auth0, Interactive Brokers integration, five to ten algorithmic strategies, a 10-to-12 person implementation plan. The plan is good. Drawing the right lines before implementation restarts is the difference between shipping in six months and landing here again in 2027.
+      </p>
+
+      <div class="split" role="list" aria-label="The 60/30/10 split for Boli's build">
+        <div class="row" role="listitem">
+          <div class="pct">60%</div>
+          <div>
+            <p class="label">Traditional code and database plumbing</p>
+            <p class="desc">Account sync with Interactive Brokers, trade state, position management, audit log, user onboarding, investor reporting. Postgres and queue work, not model work.</p>
+          </div>
+        </div>
+        <div class="row" role="listitem">
+          <div class="pct">30%</div>
+          <div>
+            <p class="label">Rule-based logic, legible by design</p>
+            <p class="desc">Your five to ten strategies are rule-sets dressed as algorithms. They should be legible as rules so LPs and compliance counsel can read them without an ML background.</p>
+          </div>
+        </div>
+        <div class="row ai" role="listitem">
+          <div class="pct">10%</div>
+          <div>
+            <p class="label">The AI surface, wherever a learned model earns its seat</p>
+            <p class="desc">Signal generation, interface reasoning, or something adjacent. One layer, earned on merit, priced against the cost of running it. Not the whole brand, just the piece that pays for itself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="engagement">
+    <div class="wrap">
+      <p class="kicker">The engagement</p>
+      <h2 id="engagement">A scoped sprint modeled on work we did for Feeld (CTO Andrew Santus).</h2>
+      <p class="lede">You get a structure that tells you what to build in-house, what to route to a partner, and what to delete from the plan.</p>
+      <div class="engagement">
+        <h3>What ships in four weeks</h3>
+        <ul>
+          <li>Two-day workshop on your stack and decision layers</li>
+          <li>Four advisory calls across the engagement window</li>
+          <li>A written Organizational Context Architecture tailored to Boli</li>
+          <li>A Strategic Operations Framework you can hand to the next CTO you hire or the next contractor team you brief</li>
+        </ul>
+        <p class="delivery">Scoped sprint. Audit-first. Deliverable format is readable by a solo founder today and by a full engineering team when you hire one.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="methodology">
+    <div class="wrap">
+      <p class="kicker">Methodology</p>
+      <h2 id="methodology">Interpretable Context Methodology. Published, MIT-licensed, and readable as a spec.</h2>
+      <div class="paper">
+        <p>
+          Agent and system context organized as a layered filesystem. L0 identity down through L4 working artifacts. Measurable interpretability. Reproducible across teams. For Boli it reads as a spec: here is how a two-person technical org holds a live trading system in their heads without drifting.
+        </p>
+        <aside class="citation" aria-label="Citation">
+          Van Clief et al. <br />
+          Interpretable Context Methodology:<br />
+          Folder Structure as Agent Architecture.<br />
+          Submitted to ACM TiiS.<br />
+          Repo: <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="partner">
+    <div class="wrap">
+      <p class="kicker">Implementation partner</p>
+      <h2 id="partner">For the layer below orchestration, Eduba partners with NLP Logix.</h2>
+      <p class="partnership">
+        Production data pipelines, trading infra hardening, broker-integration engineering. NLP Logix has been in machine learning since 2011 and runs over 150 data scientists. One introduction, no retainer drama, you meet them if and when the work calls for it.
+      </p>
+    </div>
+  </section>
+
+  <section class="credentials" aria-labelledby="cred">
+    <div class="wrap">
+      <p class="kicker">Who you would be working with</p>
+      <h2 id="cred">Jake Van Clief, founder, on the sprint from day one as methodology author.</h2>
+      <div class="cred-grid">
+        <ul>
+          <li><span class="tick">01</span><span>Marine Corps veteran. Eight years, cryptographic systems, F-35 and F-18 avionics.</span></li>
+          <li><span class="tick">02</span><span>MSc Future Governance, University of Edinburgh.</span></li>
+          <li><span class="tick">03</span><span>Published in ACM TiiS (ICM) and arXiv.</span></li>
+        </ul>
+        <ul>
+          <li><span class="tick">04</span><span>1,500+ people trained across enterprise engagements since May 2025. Pacific Life, Colgate-Palmolive, KPMG UK (one of the Big Four).</span></li>
+          <li><span class="tick">05</span><span>6,000 to 9,000 hours saved per year on workforce enablement engagements. 95% 30-day adoption.</span></li>
+          <li><span class="tick">06</span><span>Matt Creamer, CRO, runs the first conversation. Matt leads enterprise outreach for Eduba.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" aria-labelledby="cta">
+    <div class="wrap">
+      <div class="cta-card">
+        <p class="kicker">Next step</p>
+        <h2 id="cta">30 minutes with Matt Creamer. Bring the EffectiveSoft SRS.</h2>
+        <p class="cta-sub">
+          We will map the 60/30/10 lines on your stack on the call, no prep needed. If the shape is wrong for where you are right now, the graceful move is a shorter paid working session or a warm handoff to NLP Logix. Either is fine.
+        </p>
+        <div class="cta-actions">
+          <a class="button" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener" aria-label="Book a 30 minute call with Matt Creamer on Calendly">
+            Book 30 minutes <span class="arrow" aria-hidden="true">&rarr;</span>
+          </a>
+          <span class="contact-inline">
+            <strong>Matt Creamer</strong>, CRO, Eduba · <a href="mailto:thecro@eduba.io">thecro@eduba.io</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="prepared">Prepared by Eduba, <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a></span>
+    <span>For Boli AI. eMerge Americas Miami 2026.</span>
+  </div>
+</footer>
+
+</body>
+</html>
